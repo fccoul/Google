@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+  html, body { height: 100%; margin: 0; padding: 0; }
+  #myMap { height: 100%; }
+</style>
+<!--L'URL contenue dans la balise script désigne l'emplacement d'un fichier JavaScript qui charge 
+tous les symboles et toutes les définitions dont vous avez besoin pour utiliser Google Maps API. 
+Cette balise script est obligatoire.
+-->
+ <!--<script type="text/javascript" src="scripts/jquery-3.2.0.min.js"></script>-->
+ <!--
+<script type="text/javascript">
+$(document).ready(function () {
+    alert("whattstss");
+	alert($("#txt").val());
+	alert("kpleus");
+});
+</script>
+-->
+<head>
+
+<body>
+  
+  <h1><i>My First Map Google...</i></h1>
+  <div id="myMap">
+  </div>
+ 
+ <input type="text" id="txt" value="beach"/>
+
+ <!--<script type="text/javascript" src="scripts/myFunctionMaps.js"></script>-->
+ 
+<script>
+function initMap()
+	  {
+	  alert('hello');
+	       var map=new google.maps.Map(document.getElementById('myMap'),{
+		       center:{lat:-34.397,lng:150.644},
+			   zoom: 8
+		   });
+	  }
+		
+</script>
+
+ <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAp3WvNTi7bOQqrjDpfc1e8Oip34jZ38Rs&callback=initMap">
+</script >
+
+</body>
+</html>
